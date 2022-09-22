@@ -1,0 +1,17 @@
+@import "./sass/utils/mixins.scss";
+@import "./sass/utils/variables.scss";
+@import "./sass/base.scss";
+@import "./sass/Layouts/header.scss";
+@import "./sass/Layouts/Recherche.scss";
+@import "./sass/components/Bouton.scss";
+
+.fonctionnement_titre{
+    margin: 0;
+    padding: 48px 0 18px 0;
+    text-indent: 5%;
+}
+
+.fonctionnement_expl{
+    display: flex;
+    flex-flow: row wrap;
+}

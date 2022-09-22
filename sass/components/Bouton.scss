@@ -1,0 +1,48 @@
+.menu--bouton{
+    height: 50px;
+    width: 220px;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    background: linear-gradient(170deg,$secondaire, $primaire);
+    color: #FFF;
+    @include shadow_base
+}
+.menu--bouton:hover {
+    @include zoom;
+}
+.bouton:hover{
+    @include zoom
+}
+.bouton{
+    width: 25%;
+    height: 75px;
+    position: relative;
+    margin: 10px auto;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    @include shadow_base;
+    background-color: $grisclair;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+.bouton--numero {
+    position: absolute;
+    left: -10px;
+    top: 26px;
+    padding: 3px 8.5px 2px 6.5px;
+    background-color: $primaire;
+    border: 1px solid $primaire;
+    border-radius: 22px;
+    color: #FFF;
+}
+.bouton--noir {
+    width: 14px;
+    margin: 0 7% 0 11%;
+    color: grey;
+}
