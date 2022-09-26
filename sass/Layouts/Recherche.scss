@@ -1,23 +1,28 @@
 .recherche{
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7;
+    box-shadow: inset 0px 2px 3px #b4b4b4;
+
+
     span {
-        position: absolute;
-        width: 24px; 
-        left: 23vw;
+        margin: 0%;
         font-size: 1rem;
     }
     input {
-        width: 100%;
         height: 50px;
         display: block;
         margin: 0 auto;
         border: none;
         font-size: 0.95rem;
         font-weight: 600;
-        background-color: rgba(128, 128, 128, 0.233);
+        background-color: #e7e7e7;
         color: #000;
         text-align: center;
+        margin:0% ;
+        box-shadow: inset 0px 2px 0px #b4b4b4;
+
         
     }
 }

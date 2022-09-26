@@ -1,0 +1,47 @@
+
+.pied {
+    height: 150px;
+    margin-top: 30px;
+    color: #FFF;
+    background-color: #363636;
+    margin: 0px;
+    h4{
+        text-indent: 7%;
+        padding: 20px 0px 0px 0px;
+        font-family: "Shrikhand", cursive;
+
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+
+        li{            
+            list-style-type: none;
+            min-width: 25%;
+            margin: 0px;
+            padding: 0px 0px 10px 0px;
+        }
+    }
+}
+.lien{
+    text-decoration: none;
+    color: #FFF;
+}
+.lien:visited {
+    color: #FFF;
+}
+.lien__icone {
+    width: 18px;
+    margin-right: 9px;
+}
+
+@media screen and (max-width: 1024px){
+    .pied{
+        height: 200px;
+    }
+    .pied__liste--element{
+        width: 100%;
+    }
+}

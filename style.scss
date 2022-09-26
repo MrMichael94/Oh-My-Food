@@ -1,8 +1,9 @@
 @import "./sass/utils/mixins.scss";
 @import "./sass/utils/variables.scss";
 @import "./sass/base.scss";
-@import "./sass/Layouts/header.scss";
-@import "./sass/Layouts/Recherche.scss";
-@import "./sass/components/Bouton.scss";
+@import "./sass/layouts/header.scss";
+@import "./sass/layouts/recherche.scss";
+@import "./sass/components/bouton.scss";
 @import "./sass/Page/fonctionnement.scss";
-
+@import "./sass/layouts/restaurants.scss";
+@import "./sass/layouts/footer.scss";
