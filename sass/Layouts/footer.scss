@@ -5,17 +5,17 @@
     color: #FFF;
     background-color: #363636;
     margin: 0px;
+    padding-left: 40px;
     h4{
-        text-indent: 7%;
         padding: 20px 0px 0px 0px;
         font-family: "Shrikhand", cursive;
-
+        font-weight: 400;
     }
     ul{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding: 20px;
+        padding: 20px 0px 0px 0px;
 
         li{            
             list-style-type: none;
@@ -36,7 +36,6 @@
     width: 18px;
     margin-right: 9px;
 }
-
 @media screen and (max-width: 1024px){
     .pied{
         height: 200px;

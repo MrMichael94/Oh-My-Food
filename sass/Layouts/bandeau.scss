@@ -1,0 +1,21 @@
+.bandeau{
+    position: relative;
+    .bandeau__image{
+        max-height: 250px;
+        width: 100%; 
+    }
+    .bandeau__texte{
+        border-radius: 40px 40px 0PX 0px;
+        height: 60px;
+        font-family: "Shrikhand", cursive;
+        position: absolute;
+        bottom: 1px;
+        background-color: white;
+        width: 100%;
+            .bandeau__texte__titre{
+            padding: 15px 0 28.5px 10px;
+            font-weight: 300;
+            }
+        }
+    } 
+           

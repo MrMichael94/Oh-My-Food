@@ -9,6 +9,7 @@
 }
 
 .card{
+    position: relative;
     width: 45%;
     height: 235px;
     min-width: 369px;
@@ -29,6 +30,7 @@
         margin: 0;
         padding: 13px 0 0 0;
         text-indent: 4%;
+        font-size: 18px;
     }        
     P{
         margin: 0;
@@ -37,7 +39,6 @@
 }
 .card:hover{
     @include zoom;
-
 }
 
 .restaurants__cards{
@@ -46,3 +47,16 @@
     gap: 30px;
 }
 
+.carte__lien--nouveau {
+    width: 80px;
+    position: absolute;
+    padding: 6px 0;
+    border-radius: 2px;
+    background-color: $tertiaire;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #278870;
+    right: 12px;
+    top: 12px;
+}

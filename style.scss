@@ -7,3 +7,64 @@
 @import "./sass/Page/fonctionnement.scss";
 @import "./sass/layouts/restaurants.scss";
 @import "./sass/layouts/footer.scss";
+@import "./sass/layouts/bandeau.scss";
+/* A TRIER PAS FINI  */
+.repas__titre {
+    height: 50px;
+    min-width: 80px;
+    max-width: 200px;
+    left: 5%;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.repas__titre--barre {
+    width: 100%;
+    max-width: 50px;
+    height: 2.5px;
+    display: block;
+    margin: 5px 0PX 0PX 0px;
+    background-color: $tertiaire;
+}
+.repas__entrée{
+    gap: 30px;
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 30px;
+
+}
+.repas{
+    background-color: $grisclair;
+    padding: 20px;
+}
+
+.repas__entrée--choix{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    @include shadow_all;
+    width: 92vw;
+    border-radius: 25px;
+    padding: 10px 0px 0px 10px;
+    margin: 0px;
+    background-color: #FFF;
+}
+.assiette__texte{
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+}
+.assiette__prix{
+    display: flex;
+    padding-right: 20px;
+}
+
+.assiette__texte__menu{
+    font-size: 19px;
+    font-weight: 500;
+}
+.assiette__texte__menu2{
+    font-size: 15px;
+    font-weight: 300;
+}
