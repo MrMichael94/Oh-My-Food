@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -16,10 +15,17 @@ p {
   margin: 0px;
 }
 
+main {
+  max-width: 1200px;
+}
+
+header {
+  max-width: 1200px;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  box-shadow: 0px 2px 3px gray;
   padding: 3px;
 }
 
@@ -68,10 +74,11 @@ header {
 .menu h2 {
   font-size: 30px;
   margin: 0px;
-  padding-top: 20px;
+  padding: 10px 0px;
 }
 .menu p {
   color: gray;
+  padding: 0px 0px 20px 0px;
 }
 
 .menu--bouton {
@@ -205,8 +212,17 @@ header {
   top: 12px;
 }
 
+.coeur {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+  font-size: 30px;
+  color: gray;
+}
+
 .pied {
   height: 150px;
+  width: 100%;
   margin-top: 30px;
   color: #FFF;
   background-color: #363636;
@@ -214,6 +230,7 @@ header {
   padding-left: 40px;
 }
 .pied h4 {
+  max-width: 1200px;
   padding: 20px 0px 0px 0px;
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -223,6 +240,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   padding: 20px 0px 0px 0px;
+  max-width: 1200px;
 }
 .pied ul li {
   list-style-type: none;
@@ -259,6 +277,7 @@ header {
 .bandeau .bandeau__image {
   max-height: 250px;
   width: 100%;
+  object-fit: cover;
 }
 .bandeau .bandeau__texte {
   border-radius: 40px 40px 0PX 0px;
@@ -266,15 +285,24 @@ header {
   font-family: "Shrikhand", cursive;
   position: absolute;
   bottom: 1px;
-  background-color: white;
+  background-color: #FAFAFA;
   width: 100%;
 }
 .bandeau .bandeau__texte .bandeau__texte__titre {
   padding: 15px 0 28.5px 10px;
   font-weight: 300;
+  background-color: #FAFAFA;
+  border-radius: 40px;
 }
 
-/* A TRIER PAS FINI  */
+.coeur_page {
+  position: absolute;
+  right: 45px;
+  bottom: 16px;
+  font-size: 30px;
+  color: gray;
+}
+
 .repas__titre {
   height: 50px;
   min-width: 80px;
@@ -339,3 +367,11 @@ header {
   font-size: 15px;
   font-weight: 300;
 }
+
+.repas P {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* A TRIER PAS FINI  */
