@@ -13,10 +13,15 @@ p{
     margin: 0px
 }
 
-main{
+main {
     max-width: 1200px;
 }
 
 header{
     max-width: 1200px;
+}
+
+.page_restaurant{
+    background-color: $grisclair;
+    padding-bottom: 30px;
 }

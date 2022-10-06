@@ -10,7 +10,7 @@
 }
 .repas__titre--barre {
     width: 100%;
-    max-width: 50px;
+    max-width: 34px;
     height: 2.5px;
     display: block;
     margin: 5px 0PX 0PX 0px;
@@ -25,7 +25,7 @@
 }
 .repas{
     background-color: $grisclair;
-    padding: 20px;
+    padding: 14px;
 }
 
 .repas__entrée--choix{
@@ -34,7 +34,7 @@
     height: 70px;
     @include shadow_all;
     width: 92vw;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 10px 0px 0px 10px;
     margin: 0px;
     background-color: #FFF;
@@ -46,7 +46,8 @@
 }
 .assiette__prix{
     display: flex;
-    padding-right: 20px;
+    margin: 0px 20px 0px 20px ;
+    font-weight: bold;
 }
 
 .assiette__texte__menu{
@@ -62,4 +63,21 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+.commander{
+height: 50px;
+width: 220px;
+border: none;
+border-radius: 25px;
+font-size: 16px;
+font-weight: 500;
+color: #FFF;
+@include shadow_base;
+@include gradient;
+display: flex;
+justify-content: space-around;
+}
+
+.commander:hover {
+    @include zoom;
 }

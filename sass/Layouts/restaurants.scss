@@ -2,6 +2,7 @@
     background-color: rgba(180, 180, 180, 0.0941176471);
     padding: 30px 0px 40px 0px; 
     margin-top: 40px;
+    padding: 10px;
     h2{
         text-indent: 5%;
         margin-bottom: 30px;
@@ -9,14 +10,14 @@
     .fa-regular {
         position: absolute;
         right: 20px;
-        bottom: 16px;
+        bottom: 25px;
         font-size: 30px;
         color: gray ;
     }
     .fa-solid{
         position: absolute;
         right: 20px;
-        bottom: 16px;
+        bottom: 25px;
         font-size: 30px;
         @include gradient;
         color: transparent;
@@ -34,8 +35,8 @@
 .card{
     position: relative;
     width: 45%;
-    height: 235px;
-    min-width: 369px;
+    height: 250px;
+    min-width: 350px;
     background:white;
     border-radius: 20px;
     text-decoration: none;
