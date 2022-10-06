@@ -6,6 +6,29 @@
         text-indent: 5%;
         margin-bottom: 30px;
     }
+    .fa-regular {
+        position: absolute;
+        right: 20px;
+        bottom: 16px;
+        font-size: 30px;
+        color: gray ;
+    }
+    .fa-solid{
+        position: absolute;
+        right: 20px;
+        bottom: 16px;
+        font-size: 30px;
+        @include gradient;
+        color: transparent;
+        opacity: 0;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: all 200ms;
+    }
+    .fa-solid:hover {
+        opacity: 1;
+        transform :scale(1.2)
+    }
 }
 
 .card{
@@ -61,10 +84,3 @@
     top: 12px;
 }
 
-.coeur{
-    position: absolute;
-    right: 20px;
-    bottom: 16px;
-    font-size: 30px;
-    color: gray ;
-}

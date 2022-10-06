@@ -5,15 +5,15 @@
     border-radius: 25px;
     font-size: 0.95rem;
     font-weight: 500;
-    background: linear-gradient(170deg,$secondaire, $primaire);
     color: #FFF;
-    @include shadow_base
+    @include shadow_base;
+    @include gradient;
 }
 .menu--bouton:hover {
     @include zoom;
 }
 .bouton:hover{
-    @include zoom
+    @include zoom;
 }
 .bouton{
     width: 25%;
