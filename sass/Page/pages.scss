@@ -1,69 +1,101 @@
-.repas__titre {
-    height: 50px;
-    min-width: 80px;
-    max-width: 200px;
-    left: 5%;
-    margin: 0;
-    font-size: 0.95rem;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-.repas__titre--barre {
-    width: 100%;
-    max-width: 34px;
-    height: 2.5px;
-    display: block;
-    margin: 5px 0PX 0PX 0px;
-    background-color: $tertiaire;
+.repas{
+    background-color: $grisclair;
+    padding: 14px;
+    .repas__titre {
+        height: 50px;
+        min-width: 80px;
+        max-width: 200px;
+        left: 5%;
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        .repas__titre--barre {
+            width: 100%;
+            max-width: 34px;
+            height: 2.5px;
+            display: block;
+            margin: 5px 0PX 0PX 0px;
+            background-color: $tertiaire;
+        }
+    }
 }
 .repas__entrée{
     gap: 30px;
     display: flex;
     flex-flow: wrap;
     margin-bottom: 30px;
+    .repas__entrée--choix{
+        display: flex;
+        height: 60px;
+        @include shadow_all;
+        width: 92vw;
+        border-radius: 20px;
+        margin: 0px;
+        background-color: #FFF;
+        overflow: hidden;
+        animation: aparition 2s;
+        animation-fill-mode: both;
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+              animation-delay: 100ms *
+               $i;
+        }
+        }
+        .assiette__texte{
+            margin: 0%;
+            padding: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        
+            .assiette__texte__menu{
+                font-size: 18px;
+                font-weight: 500;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .assiette__texte__menu2{
+                font-size: 15px;
+                font-weight: 300;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+        .assiette__prix{
+            margin-left: auto;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px 30px 10px 0px;
 
-}
-.repas{
-    background-color: $grisclair;
-    padding: 14px;
-}
-
-.repas__entrée--choix{
-    display: flex;
-    flex-direction: column;
-    height: 70px;
-    @include shadow_all;
-    width: 92vw;
-    border-radius: 20px;
-    padding: 10px 0px 0px 10px;
-    margin: 0px;
-    background-color: #FFF;
-}
-.assiette__texte{
-    display: flex;
-    justify-content: space-between;
-    margin: 0%;
-}
-.assiette__prix{
-    display: flex;
-    margin: 0px 20px 0px 20px ;
-    font-weight: bold;
+        }
+        .assiette--valide {
+            background-color: $tertiaire;
+            margin: 0%;
+            margin-right: -58px;
+            width: 55px;
+            display: flex;
+            transition: margin-right 0.7s;
+            color: white;
+            .assiette--valide--icone{
+                font-size: 22px;
+            }
+        }
+        &:hover {
+            .assiette--valide{
+            margin-right: 0px;
+            }
+            i{
+                animation: valide-rotation 0.8s ;
+            }
+        }
+    }
 }
 
-.assiette__texte__menu{
-    font-size: 19px;
-    font-weight: 500;
-}
-.assiette__texte__menu2{
-    font-size: 15px;
-    font-weight: 300;
-}
 
-.repas P{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
 .commander{
 height: 50px;
 width: 220px;
@@ -76,8 +108,8 @@ color: #FFF;
 @include gradient;
 display: flex;
 justify-content: space-around;
+    &:hover {
+    @include zoom;
+    }
 }
 
-.commander:hover {
-    @include zoom;
-}

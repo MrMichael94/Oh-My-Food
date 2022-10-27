@@ -21,15 +21,15 @@
         }
     .fa-regular{
         position: absolute;
-        right: 45px;
-        bottom: 16px;
+        right: 22px;
+        bottom: 28px;
         font-size: 30px;
         color: gray ;
     }
     .fa-solid{
         position: absolute;
-        right: 45px;
-        bottom: 16px;
+        right: 22px;
+        bottom: 28px;
         font-size: 30px;
         @include gradient;
         color: transparent;
@@ -42,6 +42,5 @@
         opacity: 1;
         transform :scale(1.2)
     }
-
     } 
            

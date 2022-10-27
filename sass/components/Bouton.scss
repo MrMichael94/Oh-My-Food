@@ -9,17 +9,24 @@
     @include shadow_base;
     @include gradient;
 }
+
 .menu--bouton:hover {
     @include zoom;
 }
+
 .bouton:hover{
     @include zoom;
+    background-color: #9256dc18; 
+    .bouton--noir{
+        color: $primaire;
+    }
 }
+
 .bouton{
     width: 25%;
     height: 75px;
     position: relative;
-    margin: 10px auto;
+    margin: 20px ;
     padding: 0;
     border: none;
     border-radius: 20px;
@@ -32,6 +39,7 @@
     font-family: "Roboto", sans-serif;
     min-width: 300px;
 }
+
 .bouton--numero {
     position: absolute;
     left: -10px;
@@ -42,8 +50,10 @@
     border-radius: 22px;
     color: #FFF;
 }
+
 .bouton--noir {
     width: 14px;
     margin: 0 7% 0 11%;
     color: grey;
 }
+
