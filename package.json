@@ -4,7 +4,7 @@
   "description": "Projet 3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w style.scss:style.css --no-source-map"
+    "sass": "sass -w sass/main.scss:css/style.css --no-source-map"
   },
   "repository": {
     "type": "git",
