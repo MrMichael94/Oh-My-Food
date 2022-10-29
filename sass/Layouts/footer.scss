@@ -2,9 +2,8 @@
 .pied {
     height: 150px;
     width: 100%;
-    margin-top: 30px;
-    color: #FFF;
-    background-color: #363636;
+    color: $blanc;
+    background-color: $pied;
     margin: 0px;
     padding-left: 40px;
     
@@ -29,17 +28,17 @@
             padding: 0px 0px 10px 0px;
         }
     }
-}
-.lien{
-    text-decoration: none;
-    color: #FFF;
-}
-.lien:visited {
-    color: #FFF;
-}
-.lien__icone {
-    width: 18px;
-    margin-right: 9px;
+    .lien{
+        text-decoration: none;
+        color: $blanc;
+    }
+    .lien:visited {
+        color: $blanc;
+    }
+    .lien__icone {
+        width: 18px;
+        margin-right: 9px;
+    }
 }
 @media screen and (max-width: 1024px){
     .pied{

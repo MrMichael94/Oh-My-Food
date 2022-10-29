@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 .loader {
@@ -84,11 +83,11 @@ header {
   padding: 3px;
 }
 
-.tête {
+.tete {
   position: relative;
 }
 
-.tête__flèche {
+.tete__fleche {
   position: absolute;
   top: 7px;
   left: 26px;
@@ -101,7 +100,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #e7e7e7;
-  box-shadow: inset 0px 2px 0px #b4b4b4;
+  box-shadow: inset 0px 2px 0px grey;
 }
 .recherche span {
   margin: 0%;
@@ -118,7 +117,7 @@ header {
   color: #000;
   text-align: center;
   margin: 0%;
-  box-shadow: inset 0px 2px 0px #b4b4b4;
+  box-shadow: inset 0px 2px 0px grey;
 }
 
 .menu {
@@ -132,7 +131,7 @@ header {
   padding: 10px 0px;
 }
 .menu p {
-  color: gray;
+  color: grey;
   padding: 0px 0px 20px 0px;
 }
 
@@ -144,22 +143,14 @@ header {
   font-size: 16px;
   font-weight: 500;
   color: #FFF;
-  box-shadow: 0px 5px 10px 0px #c1c1c1;
+  box-shadow: 0px 5px 10px 0px grey;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
 }
 
 .menu--bouton:hover {
   cursor: pointer;
   transform: scale(1.03);
-}
-
-.bouton:hover {
-  cursor: pointer;
-  transform: scale(1.03);
-  background-color: rgba(146, 86, 220, 0.0941176471);
-}
-.bouton:hover .bouton--noir {
-  color: #9356DC;
+  box-shadow: 0px 5px 20px 0px #8e8e8e;
 }
 
 .bouton {
@@ -170,17 +161,16 @@ header {
   padding: 0;
   border: none;
   border-radius: 20px;
-  box-shadow: 0px 5px 10px 0px #c1c1c1;
+  box-shadow: 0px 5px 10px 0px grey;
   background-color: #FAFAFA;
   font-size: 1rem;
   font-weight: 500;
   text-align: start;
-  color: #000;
+  color: black;
   font-family: "Roboto", sans-serif;
   min-width: 300px;
 }
-
-.bouton--numero {
+.bouton .bouton--numero {
   position: absolute;
   left: -10px;
   top: 26px;
@@ -190,11 +180,20 @@ header {
   border-radius: 22px;
   color: #FFF;
 }
-
-.bouton--noir {
+.bouton .bouton--noir {
   width: 14px;
   margin: 0 7% 0 11%;
   color: grey;
+}
+
+.bouton:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0px 5px 20px 0px #8e8e8e;
+  background-color: rgba(146, 86, 220, 0.0941176471);
+}
+.bouton:hover .bouton--noir {
+  color: #9356DC;
 }
 
 .fonctionnement_titre {
@@ -224,7 +223,7 @@ header {
   right: 20px;
   bottom: 25px;
   font-size: 30px;
-  color: gray;
+  color: grey;
 }
 .restaurants .fa-solid {
   position: absolute;
@@ -241,6 +240,25 @@ header {
 .restaurants .fa-solid:hover {
   opacity: 1;
   transform: scale(1.2);
+}
+
+.restaurants__cards {
+  display: flex;
+  flex-flow: wrap;
+  gap: 30px;
+}
+.restaurants__cards .carte__lien--nouveau {
+  width: 80px;
+  position: absolute;
+  padding: 6px 0;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #278870;
+  right: 12px;
+  top: 12px;
 }
 
 .card {
@@ -275,32 +293,12 @@ header {
 .card:hover {
   cursor: pointer;
   transform: scale(1.03);
-}
-
-.restaurants__cards {
-  display: flex;
-  flex-flow: wrap;
-  gap: 30px;
-}
-
-.carte__lien--nouveau {
-  width: 80px;
-  position: absolute;
-  padding: 6px 0;
-  border-radius: 2px;
-  background-color: #99E2D0;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #278870;
-  right: 12px;
-  top: 12px;
+  box-shadow: 0px 5px 20px 0px #8e8e8e;
 }
 
 .pied {
   height: 150px;
   width: 100%;
-  margin-top: 30px;
   color: #FFF;
   background-color: #363636;
   margin: 0px;
@@ -325,17 +323,14 @@ header {
   margin: 0px;
   padding: 0px 0px 10px 0px;
 }
-
-.lien {
+.pied .lien {
   text-decoration: none;
   color: #FFF;
 }
-
-.lien:visited {
+.pied .lien:visited {
   color: #FFF;
 }
-
-.lien__icone {
+.pied .lien__icone {
   width: 18px;
   margin-right: 9px;
 }
@@ -367,7 +362,6 @@ header {
 .bandeau .bandeau__texte .bandeau__texte__titre {
   padding: 15px 0 28.5px 10px;
   font-weight: 300;
-  background-color: #FAFAFA;
   border-radius: 40px;
 }
 .bandeau .fa-regular {
@@ -375,7 +369,7 @@ header {
   right: 22px;
   bottom: 28px;
   font-size: 30px;
-  color: gray;
+  color: grey;
 }
 .bandeau .fa-solid {
   position: absolute;
@@ -417,16 +411,16 @@ header {
   background-color: #99E2D0;
 }
 
-.repas__entrée {
+.repas__entree {
   gap: 30px;
   display: flex;
   flex-flow: wrap;
   margin-bottom: 30px;
 }
-.repas__entrée .repas__entrée--choix {
+.repas__entree .repas__entree--choix {
   display: flex;
   height: 60px;
-  box-shadow: 0px 5px 10px 0px #b4b4b4;
+  box-shadow: 0px 5px 10px 0px grey;
   width: 92vw;
   border-radius: 20px;
   margin: 0px;
@@ -435,59 +429,62 @@ header {
   animation: aparition 2s;
   animation-fill-mode: both;
 }
-.repas__entrée .repas__entrée--choix:nth-child(1) {
-  animation-delay: 100ms;
+.repas__entree .repas__entree--choix:nth-child(1) {
+  animation-delay: 250ms;
 }
-.repas__entrée .repas__entrée--choix:nth-child(2) {
-  animation-delay: 200ms;
+.repas__entree .repas__entree--choix:nth-child(2) {
+  animation-delay: 500ms;
 }
-.repas__entrée .repas__entrée--choix:nth-child(3) {
-  animation-delay: 300ms;
+.repas__entree .repas__entree--choix:nth-child(3) {
+  animation-delay: 750ms;
 }
-.repas__entrée .repas__entrée--choix .assiette__texte {
+.repas__entree .repas__entree--choix:nth-child(4) {
+  animation-delay: 1000ms;
+}
+.repas__entree .repas__entree--choix .assiette__texte {
   margin: 0%;
   padding: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.repas__entrée .repas__entrée--choix .assiette__texte .assiette__texte__menu {
+.repas__entree .repas__entree--choix .assiette__texte .assiette__texte__menu {
   font-size: 18px;
   font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.repas__entrée .repas__entrée--choix .assiette__texte .assiette__texte__menu2 {
+.repas__entree .repas__entree--choix .assiette__texte .assiette__texte__menu2 {
   font-size: 15px;
   font-weight: 300;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.repas__entrée .repas__entrée--choix .assiette__prix {
+.repas__entree .repas__entree--choix .assiette__prix {
   margin-left: auto;
   font-weight: bold;
   display: flex;
   align-items: flex-end;
   padding: 10px 30px 10px 0px;
 }
-.repas__entrée .repas__entrée--choix .assiette--valide {
+.repas__entree .repas__entree--choix .assiette--valide {
   background-color: #99E2D0;
   margin: 0%;
   margin-right: -58px;
   width: 55px;
   display: flex;
   transition: margin-right 0.7s;
-  color: white;
+  color: #FFF;
 }
-.repas__entrée .repas__entrée--choix .assiette--valide .assiette--valide--icone {
+.repas__entree .repas__entree--choix .assiette--valide .assiette--valide--icone {
   font-size: 22px;
 }
-.repas__entrée .repas__entrée--choix:hover .assiette--valide {
+.repas__entree .repas__entree--choix:hover .assiette--valide {
   margin-right: 0px;
 }
-.repas__entrée .repas__entrée--choix:hover i {
+.repas__entree .repas__entree--choix:hover i {
   animation: valide-rotation 0.8s;
 }
 
@@ -499,7 +496,7 @@ header {
   font-size: 16px;
   font-weight: 500;
   color: #FFF;
-  box-shadow: 0px 5px 10px 0px #c1c1c1;
+  box-shadow: 0px 5px 10px 0px grey;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   display: flex;
   justify-content: space-around;
@@ -507,6 +504,7 @@ header {
 .commander:hover {
   cursor: pointer;
   transform: scale(1.03);
+  box-shadow: 0px 5px 20px 0px #8e8e8e;
 }
 
 @keyframes valide-rotation {

@@ -15,7 +15,6 @@
             .bandeau__texte__titre{
             padding: 15px 0 28.5px 10px;
             font-weight: 300;
-            background-color: #FAFAFA;
             border-radius: 40px;
             }
         }
@@ -24,7 +23,7 @@
         right: 22px;
         bottom: 28px;
         font-size: 30px;
-        color: gray ;
+        color: $gris ;
     }
     .fa-solid{
         position: absolute;

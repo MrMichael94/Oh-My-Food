@@ -4,15 +4,17 @@ header {
     padding: 3px;
 }
 
-
-.tête{
+.tete{
     position: relative;
 
 }
-.tête__flèche{
+
+.tete__fleche{
     position: absolute;
     top: 7px;
     left: 26px;
     font-size: 30px;
-    color: black;
+    color: $noir;
 }
+
+

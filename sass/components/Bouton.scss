@@ -14,13 +14,6 @@
     @include zoom;
 }
 
-.bouton:hover{
-    @include zoom;
-    background-color: #9256dc18; 
-    .bouton--noir{
-        color: $primaire;
-    }
-}
 
 .bouton{
     width: 25%;
@@ -35,25 +28,32 @@
     font-size: 1rem;
     font-weight: 500;
     text-align: start;
-    color: #000;
+    color: $noir;
     font-family: "Roboto", sans-serif;
     min-width: 300px;
+    .bouton--numero {
+        position: absolute;
+        left: -10px;
+        top: 26px;
+        padding: 3px 8.5px 2px 6.5px;
+        background-color: $primaire;
+        border: 1px solid $primaire;
+        border-radius: 22px;
+        color: $blanc;
+    }
+    .bouton--noir {
+        width: 14px;
+        margin: 0 7% 0 11%;
+        color: $gris;
+    }
+}
+.bouton:hover{
+    @include zoom;
+    background-color: #9256dc18; 
+    .bouton--noir{
+        color: $primaire;
+    }
 }
 
-.bouton--numero {
-    position: absolute;
-    left: -10px;
-    top: 26px;
-    padding: 3px 8.5px 2px 6.5px;
-    background-color: $primaire;
-    border: 1px solid $primaire;
-    border-radius: 22px;
-    color: #FFF;
-}
 
-.bouton--noir {
-    width: 14px;
-    margin: 0 7% 0 11%;
-    color: grey;
-}
 

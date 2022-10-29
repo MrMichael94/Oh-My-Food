@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e7e7e7;
-    box-shadow: inset 0px 2px 0px #b4b4b4;
+    background-color: $fondloca;
+    box-shadow: inset 0px 2px 0px $gris;
 
 
     span {
@@ -17,11 +17,11 @@
         border: none;
         font-size: 0.95rem;
         font-weight: 600;
-        background-color: #e7e7e7;
+        background-color: $fondloca;
         color: #000;
         text-align: center;
         margin:0% ;
-        box-shadow: inset 0px 2px 0px #b4b4b4;
+        box-shadow: inset 0px 2px 0px $gris;
     }
 }
 .menu{
@@ -34,7 +34,7 @@
         padding: 10px 0px;
     }
      p{
-        color: gray;
+        color: $gris;
         padding: 0px 0px 20px 0px;
 
     }

@@ -20,25 +20,25 @@
         }
     }
 }
-.repas__entrée{
+.repas__entree{
     gap: 30px;
     display: flex;
     flex-flow: wrap;
     margin-bottom: 30px;
-    .repas__entrée--choix{
+    .repas__entree--choix{
         display: flex;
         height: 60px;
         @include shadow_all;
         width: 92vw;
         border-radius: 20px;
         margin: 0px;
-        background-color: #FFF;
+        background-color: $blanc;
         overflow: hidden;
         animation: aparition 2s;
         animation-fill-mode: both;
-        @for $i from 1 through 3 {
+        @for $i from 1 through 4 {
             &:nth-child(#{$i}) {
-              animation-delay: 100ms *
+              animation-delay: 250ms *
                $i;
         }
         }
@@ -79,7 +79,7 @@
             width: 55px;
             display: flex;
             transition: margin-right 0.7s;
-            color: white;
+            color: $blanc;
             .assiette--valide--icone{
                 font-size: 22px;
             }
@@ -103,7 +103,7 @@ border: none;
 border-radius: 25px;
 font-size: 16px;
 font-weight: 500;
-color: #FFF;
+color: $blanc;
 @include shadow_base;
 @include gradient;
 display: flex;
