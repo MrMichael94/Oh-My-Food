@@ -1,0 +1,86 @@
+.restaurants{
+    background-color: $fondgris;
+    padding: 30px 0px 40px 0px; 
+    margin-top: 40px;
+    padding: 10px 10Px 40PX 10PX;
+    h2{
+        text-indent: 5%;
+        margin-bottom: 30px;
+    }
+    .fa-regular {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        font-size: 30px;
+        color: $gris ;
+    }
+    .fa-solid{
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        font-size: 30px;
+        @include gradient;
+        color: transparent;
+        opacity: 0;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: all 200ms;
+    }
+    .fa-solid:hover {
+        opacity: 1;
+        transform :scale(1.2)
+    }
+}
+
+.restaurants__cards{
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+    .carte__lien--nouveau {
+        width: 80px;
+        position: absolute;
+        padding: 6px 0;
+        border-radius: 2px;
+        background-color: $tertiaire;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: $nouveaux;
+        right: 12px;
+        top: 12px;
+    }
+}
+.card{
+    position: relative;
+    width: 45%;
+    height: 250px;
+    min-width: 350px;
+    background:white;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 10px 0px #b4b4b4;
+    text-decoration: none;
+    color: $noir; 
+    .carte__lien__image{
+        height: 175px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0PX 0px;
+    }    
+    h3{
+        margin: 0;
+        padding: 13px 0 0 0;
+        text-indent: 4%;
+        font-size: 18px;
+    }        
+    P{
+        margin: 0;
+        text-indent: 4%;
+    }  
+}
+.card:hover{
+    @include zoom;
+}
+
+
+    

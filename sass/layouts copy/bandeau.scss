@@ -1,0 +1,45 @@
+.bandeau{
+    position: relative;
+    .bandeau__image{
+        max-height: 250px;
+        width: 100%; 
+        object-fit: cover;
+    }
+    .bandeau__texte{
+        border-radius: 40px 40px 0PX 0px;
+        font-family: "Shrikhand", cursive;
+        position: absolute;
+        bottom: 1px;
+        background-color: $grisclair;
+        width: 100%;
+            .bandeau__texte__titre{
+            padding: 15px 0 28.5px 10px;
+            font-weight: 300;
+            border-radius: 40px;
+            }
+        }
+    .fa-regular{
+        position: absolute;
+        right: 22px;
+        bottom: 28px;
+        font-size: 30px;
+        color: $gris ;
+    }
+    .fa-solid{
+        position: absolute;
+        right: 22px;
+        bottom: 28px;
+        font-size: 30px;
+        @include gradient;
+        color: transparent;
+        opacity: 0;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: all 200ms;
+    }
+    .fa-solid:hover {
+        opacity: 1;
+        transform :scale(1.2)
+    }
+    } 
+           
