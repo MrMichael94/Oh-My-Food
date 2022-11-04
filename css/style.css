@@ -196,6 +196,25 @@ header {
   color: #9356DC;
 }
 
+.commander {
+  height: 50px;
+  width: 220px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+  box-shadow: 0px 5px 10px 0px grey;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  display: flex;
+  justify-content: space-around;
+}
+.commander:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0px 5px 20px 0px #8e8e8e;
+}
+
 .fonctionnement_titre {
   margin: 0;
   padding: 48px 0 18px 0;
@@ -210,9 +229,8 @@ header {
 
 .restaurants {
   background-color: rgba(180, 180, 180, 0.0941176471);
-  padding: 30px 0px 40px 0px;
   margin-top: 40px;
-  padding: 10px;
+  padding: 10px 10px 30px 10px;
 }
 .restaurants h2 {
   text-indent: 5%;
@@ -486,25 +504,6 @@ header {
 }
 .repas__entree .repas__entree--choix:hover i {
   animation: valide-rotation 0.8s;
-}
-
-.commander {
-  height: 50px;
-  width: 220px;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #FFF;
-  box-shadow: 0px 5px 10px 0px grey;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  display: flex;
-  justify-content: space-around;
-}
-.commander:hover {
-  cursor: pointer;
-  transform: scale(1.03);
-  box-shadow: 0px 5px 20px 0px #8e8e8e;
 }
 
 @keyframes valide-rotation {

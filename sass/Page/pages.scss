@@ -95,21 +95,3 @@
     }
 }
 
-
-.commander{
-height: 50px;
-width: 220px;
-border: none;
-border-radius: 25px;
-font-size: 16px;
-font-weight: 500;
-color: $blanc;
-@include shadow_base;
-@include gradient;
-display: flex;
-justify-content: space-around;
-    &:hover {
-    @include zoom;
-    }
-}
-
